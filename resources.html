@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+  <head>
+    <meta charset="UTF-8" />
+		<!-- FONTS -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@300;400&display=swap" rel="stylesheet">
+    <title>Resources - quinquenervia eco</title>
+    <style id="header">
+			
+			header {
+        position: relative;
+        height: 400px;
+        display: flex;
+        align-items: auto;
+        background-image: url('https://www.quinquenervia.com/wp-content/uploads/2023/04/header-scaled.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+				width: 100%;
+        border: none; /* remove any border */
+        margin: 0; /* remove any margin */
+        padding: 0; /* remove any padding */
+        box-sizing: border-box; /* include border and padding within the element's dimensions */
+    	}
+
+			header::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* adjust the opacity to your liking */
+    	}
+
+      .center-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1; /* position the text above the ::before pseudo-element */
+      }
+
+      .center-text h1 {
+        font-family: 'Spectral', serif;
+				font-size: 50px;
+        color: #ffffff; /* change the text color to white */
+        margin: 0;
+      }
+
+      .menu-items {
+				font-family: 'Spectral', serif,;
+				position: absolute;
+				margin: auto;
+        top: 60px;
+        right: 80px;
+				width: 80%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        z-index: 1; /* position the menu above the ::before pseudo-element */
+      }
+
+      .menu-items ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+
+      .menu-items li {
+				font-family: 'Spectral', serif;
+        margin-left: 20px;
+        display: inline-block; /* make the list items inline */
+      }
+
+      .menu-items a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+      }
+
+      .logo {
+        position: absolute;
+        top: 30px;
+        left: 80px;
+      }
+
+      .logo img {
+        height: 150px;
+      }
+
+			/* Media queries for smaller screens */
+			
+			@media only screen and (max-width: 768px) {
+				header {
+					height: 300px;
+				}
+
+				.center-text h1 {
+					font-size: 30px;
+				}
+
+				.menu-items {
+					top: 20px;
+					right: 20px;
+				}
+
+				.menu-items ul {
+					flex-direction: column;
+					align-items: flex-end;
+				}
+
+				.menu-items li {
+					margin-top: 10px;
+					display: block;
+				}
+
+				.logo {
+					top: 20px;
+					left: 20px;
+				}
+
+				.logo img {
+					height: 100px;
+				}
+			}
+
+		</style>
+		<style id="main-page">
+
+			h2 {
+				font-family: 'Spectral', serif;
+				font-size: 20px;
+				font-weight: 800;
+				margin: 0 0 -8px 0;
+			}
+
+			p, li, ol {
+				font-family: 'Spectral', serif;
+				font-size: 16px;
+				font-weight: 400;
+			}
+
+			li {
+				margin-bottom: -3px;
+				display: list-item;
+			}
+
+			.boxes {
+				display: flex;
+				max-width: 1600px;
+				width: 60%;
+				margin: auto;
+				gap: 10px;
+			}
+
+			.column-bookmarks {
+				display: inline;
+				width: 50%;
+				border: solid 0.5px grey;
+				padding: 10px;
+				border-radius: 10px;
+			}
+
+			.column-keys {	
+				display: inline;
+				width: 50%;
+				border: solid 0.5px grey;
+				padding: 10px;
+				border-radius: 10px;
+			}
+
+			.p-intro {
+				text-align: center;
+				max-width: 1600px;
+				width: 66%;
+				margin: 30px auto 40px auto;
+			}
+			
+			.p-list {
+				margin: 20px 0 -14px 0;
+				font-weight: bold;
+			}
+
+			/* Media queries for smaller screens */
+
+			@media only screen and (max-width: 767px) {
+				h2 {
+					font-size: 16px;
+				}
+
+				p, li, ol {
+					font-size: 10px;
+				}
+
+				.boxes {
+					width: 60%;
+					flex-direction: column;
+				}
+
+				.column-bookmarks, .column-keys {
+					width: 100%;
+					margin-bottom: 10px;
+				}
+
+				.p-intro {
+					width: 60%;
+					font-size: 16px;
+					margin-bottom: 20px;
+				}
+			}
+
+
+    </style>
+  </head>
+  <body>
+		<header>
+		  <div class="logo">
+        <a href="https://quinquenervia.com/">
+          <picture>
+						<source srcset="https://quinquenervia.com/wp-content/uploads/2023/04/flannel_banner_large.png" media="(min-width: 768px)">
+						<source srcset="https://quinquenervia.com/wp-content/uploads/2023/04/flannel_banner_small.png" media="(min-width: 480px)">
+						<img src="https://quinquenervia.com/wp-content/uploads/2023/04/flannel_banner_medium.png" alt="logo">
+					</picture>					
+        </a>
+      </div>
+      <nav class="menu-items">
+        <ul>
+          <li><a href="https://quinquenervia.com/">Home</a></li>
+          <li><a href="https://quinquenervia.com/publications/">Publications</a></li>
+          <li><a href="https://quinquenervia.com/resources/">Resources</a></li>
+          <li><a href="https://quinquenervia.com/privacy/">Privacy</a></li>
+        </ul>
+      </nav>
+      <div class="center-text">
+        <h1>Resources</h1>
+      </div>
+    </header>
+    <div>
+			<p class="p-intro">At <i><strong>quinquenervia eco</strong></i>, we believe that information should be easily accessible and freely available. Our aim is to create high-quality and easy-to-understand guides to the living things in our local area, and to direct like-minded individuals to the right sources of information they need. This page serves as a repository for the educational resources we have created, as well as bookmarks that we use or think others with a similar passion may find useful, and keys to help identify species. These pages are constantly evolving, so please don't hesitate to contact us at <a href="mailto:hello@quinquenervia.com">hello@quinquenervia.com</a> if you encounter any errors or if you would like to contribute to this growing list of resources.</p> 
+		</div>
+		<main  class="boxes">
+			<div class="column-bookmarks">
+				<h2 style="text-align: center;">Ecology resources</h2>
+				<p class="p-list">Categories</p>
+					<ol>
+					<li>General</li>
+					<li>Australia</li>
+					<li>New South Wales</li>
+					<li>Other states</li>
+					<li>Herbaria</li>
+					<li>Journals and books</li>
+					<li>Glossaries</li>
+					<li>Species lists</li>
+					<li>Mapping</li>
+				</ol>
+				<p class="p-list">General</p>
+				<ul>
+					<li><a href="https://www.gbif.org/">Global Biodiversity Information Facility</a></li>
+					<li><a href="https://plants.jstor.org/">Global Plants of JSTOR</a></li>
+					<li><a href="https://inaturalist.ala.org.au/">iNaturalist</a></li>
+					<li><a href="https://ibol.org/">International Barcode of Life</a></li>
+					<li><a href="https://www.ipni.org/">International Plant Names Index</a></li>
+					<li><a href="https://www.iucnredlist.org/">IUCN Red List</a></li>
+					<li><a href="https://powo.science.kew.org/">Plants of the World Online</a></li>
+					<li><a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a></li>
+					<li><a href="https://en.wikipedia.org/wiki/Main_Page">Wikipedia</a></li>
+					<li><a href="https://species.wikimedia.org/wiki/Main_Page">Wikispecies</a></li>
+					<li><a href="https://www.wiktionary.org/">Wiktionary</a></li>
+				</ul>
+				<p class="p-list">Australia</p>
+				<ul>
+					<li><a href="https://www.dcceew.gov.au/science-research/abrs/online-resources">ABRS Databases and Online Resources</a></li>
+					<li><a href="https://www.ala.org.au/">Atlas of Living Australia (ALA)</a></li>
+					<li><a href="https://labs.ala.org.au/">ALA Labs</a></li>
+					<li><a href="https://phylolink.ala.org.au/wizard/start">ALA Phylolink</a></li>
+					<li><a href="https://www.asbs.org.au/">Australasian Systematic Botany Society Inc.</a></li>
+					<li><a href="https://www.dcceew.gov.au/environment/land/nrs/science/ibra/australias-bioregions-maps">Australia's Bioregions</a></li>
+					<li><a href="https://acra.biodiversity.services/info/list">Australian Cultivar Registration Authority</a></li>
+					<li><a href="https://biodiversity.org.au/afd/home">Australian Faunal Directory</a></li>
+					<li><a href="https://www.anbg.gov.au/abrs/Mosses_online/index.html">Australian Mosses Online</a></li>
+					<li><a href="https://birdlife.org.au/">BirdLife Australia</a></li>
+					<li><a href="https://www.canbr.gov.au/index.html">Centre for Australian National Biodiversity Research</a></li>
+					<li><a href="https://www.anbg.gov.au/abrs/liverwortlist/liverworts_intro.html">Checklist of Australian Liverworts & Hornworts</a></li>
+					<li><a href="https://www.anbg.gov.au/abrs/lichenlist/introduction.html">Checklist of the Lichens of Australia</a></li>
+					<li><a href="https://www.anbg.gov.au/abrs/lichenlist/PACIFIC_introduction.html">Checklist of Pacific Island Lichens</a></li>
+					<li><a href="https://data.csiro.au/">CSIRO Data Access Portal</a></li>
+					<li><a href="https://fungimap.org.au/">Fungimap</a></li>
+					<li><a href="https://www.anbg.gov.au/plant-groups/index.html">Plant Group Profiles</a></li>
+					<li><a href="https://researchdata.edu.au/">Research Data Australia</a></li>
+					<li><a href="https://weeds.org.au/">Weeds Australia</a></li>
+				</ul>
+				<p class="p-list">New South Wales</p>
+				<ul>
+					<li><a href="https://www.environment.nsw.gov.au/atlaspublicapp/UI_Modules/ATLAS_/AtlasSearch.aspx">NSW BioNet</a></li>
+					<li><a href="https://www.environment.nsw.gov.au/threatenedSpeciesApp/threats.aspx">NSW Key Threatening Processes</a></li>
+					<li><a href="https://plantnet.rbgsyd.nsw.gov.au/search/simple.htm">NSW PlantNET</a></li>
+					<li><a href="https://www.environment.nsw.gov.au/threatenedspeciesapp/">NSW Threatened Biodiversity Profile Search</a></li>
+					<li><a href="https://www.environment.nsw.gov.au/topics/animals-and-plants/threatened-species/nsw-threatened-species-scientific-committee/determinations">NSW Threatened Species Scientific Committee Determinations</a></li>
+					<li><a href="https://plantnet.rbgsyd.nsw.gov.au/WeedAlert/">NSW WeedAlert</a></li>
+					<li><a href="https://weeds.dpi.nsw.gov.au/">NSW WeedWise</a></li>
+				</ul>
+				<p class="p-list">Other states</p>
+				<ul>
+					<li><a href="http://www.flora.sa.gov.au/">Electronic Flora of South Australia</a></li>
+					<li><a href="https://florabase.dpaw.wa.gov.au/">Florabase - the Western Australian Flora</a></li>
+					<li><a href="http://eflora.nt.gov.au/">NT Flora</a></li>
+					<li><a href="https://vicflora.rbg.vic.gov.au/">VicFlora</a></li>
+				</ul>
+				<p class="p-list">Herbaria</p>
+				<ul>
+					<li><a href="https://avh.chah.org.au/">The Australasian Virtual Herbarium</a></li>
+					<li><a href="https://www.canbr.gov.au/cpbr/herbarium/index.html">Australian National Herbarium</a></li>
+					<li><a href="https://www.ath.org.au/">Australian Tropical Herbarium</a></li>
+					<li><a href="https://apps.kew.org/herbcat/navigator.do?">Kew Herbarium Catalogue</a></li>
+					<li><a href="https://online.herbarium.unimelb.edu.au/">University of Melbourne Herbarium Collection Online</a></li>
+				</ul>
+				<p class="p-list">Journals and books</p>
+				<ul>
+					<li><a href="https://www.biodiversitylibrary.org/">Biodiversity Heritage Library</a></li>
+					<li><a href="https://www.rbgsyd.nsw.gov.au/science/our-work-discoveries/scientific-publications/cunninghamia">Cunninghamia (NSW)</a></li>
+					<li><a href="https://www.dcceew.gov.au/science-research/abrs/publications/flora-of-australia">Flora of Australia</a></li>
+					<li><a href="https://www.rbg.vic.gov.au/science/journal/">Muelleria (VIC)</a></li>
+					<li><a href="https://florabase.dpaw.wa.gov.au/nuytsia/">Nuytsia (WA)</a></li>
+					<li><a href="https://data.environment.sa.gov.au/Plants-and-Animals/Herbarium-Journals/Pages/Home.aspx">Swainsona (SA)</a></li>
+					<li><a href="https://plantnet.rbgsyd.nsw.gov.au/Telopea/index.php">Telopea - Journal of Plant Systematics (NSW)</a> <a href="https://plantnet.rbgsyd.nsw.gov.au/Telopea/contents.php?Where=ArtParentRef=3&QueryPage=%2FTelopea%2F&ResultsListPage=%2Fresults.php%2F&LimitPerPage=500">[Archive]</a></li>
+				</ul>
+				<p class="p-list">Glossaries</p>
+				<ul>
+					<li><a href="https://www.dcceew.gov.au/science-research/abrs/online-resources/glossaries/algae">Algae of Australia Glossary</a></li>
+					<li><a href="https://www.dcceew.gov.au/science-research/abrs/online-resources/glossaries/ferns">Ferns of Australia Glossary</a></li>
+					<li><a href="https://profiles.ala.org.au/opus/foa/glossary#?page=a">Flora of Australia Glossary</a></li>
+					<li><a href="https://www.dcceew.gov.au/science-research/abrs/online-resources/glossaries/fungi">Fungi of Australia Glossary</a></li>
+					<li><a href="https://en.wikipedia.org/wiki/Glossary_of_leaf_morphology">Glossary of Leaf Morphology</a></li>
+					<li><a href="https://www.dcceew.gov.au/science-research/abrs/online-resources/glossaries/lichen">Lichens of Australia Glossary</a></li>
+					<li><a href="https://www.dcceew.gov.au/science-research/abrs/online-resources/glossaries/mosses">Mosses of Australia Glossary</a></li>
+					<li><a href="https://www.dcceew.gov.au/science-research/abrs/online-resources/glossaries/protists">Protists of Australia Glossary</a></li>
+				</ul>
+				<p class="p-list">Species lists</p>
+				<ul>
+					<li><a href="https://lichen.biodiversity.org.au/nsl/services/search/taxonomy">ABRS Lichen Checklist (ABRSL)</a></li>
+					<li><a href="https://algae.biodiversity.org.au/nsl/services/search/taxonomy">Australian Algae List (AAL)</a></li>
+					<li><a href="https://algae.biodiversity.org.au/nsl/services/search/names">Australian Algae Name Index (AANI)</a></li>
+					<li><a href="https://lichen.biodiversity.org.au/nsl/services/search/names">Australian Lichen Name Index (LNI)</a></li>
+					<li><a href="https://moss.biodiversity.org.au/nsl/services/search/taxonomy">Australian Moss Census (AMC)</a></li>
+					<li><a href="https://moss.biodiversity.org.au/nsl/services/search/names">Australian Moss Name Index (AusMoss)</a></li>
+					<li><a href="https://biodiversity.org.au/nsl/services/search/taxonomy">Australian Plant Census (APC)</a></li>
+					<li><a href="https://biodiversity.org.au/nsl/services/search/names">Australian Plant Name Index (APNI)</a></li>
+					<li><a href="https://www.anbg.gov.au/abrs/liverwortlist/liverworts_intro.html">Checklist of Australian Liverworts & Hornworts</a></li>
+					<li><a href="https://www.anbg.gov.au/abrs/lichenlist/PACIFIC_introduction.html">Checklist of Pacific Island Lichens</a></li>
+					<li><a href="https://www.anbg.gov.au/abrs/lichenlist/introduction.html">Checklist of the Lichens of Australia</a></li>
+					<li><a href="https://fungi.biodiversity.org.au/nsl/services/search/taxonomy">Fungi Classification</a></li>
+					<li><a href="https://fungi.biodiversity.org.au/nsl/services/search/names">Fungi Name Index (FNI)</a></li>
+				</ul>
+				<p class="p-list">Mapping</p>
+				<ul>
+					<li><a href="https://hub.arcgis.com/search">ArcGIS Hub</a></li>
+					<li><a href="http://geocat.kew.org/">GeoCAT</a></li>
+					<li><a href="https://neo.gsfc.nasa.gov/">NASA Earth Observations</a></li>
+					<li><a href="https://opentopography.org/">OpenTopography</a></li>
+					<li><a href="https://www.qgistutorials.com/en/">QGIS Tutorials</a></li>
+					<li><a href="https://datasets.seed.nsw.gov.au/dataset">SEED Data</a></li>
+					<li><a href="https://geo.seed.nsw.gov.au/Public_Viewer/index.html?viewer=Public_Viewer&locale=en-AU">SEED Map</a></li>
+					<li><a href="https://maps.six.nsw.gov.au/">SIX Maps</a></li>
+					<li><a href="https://sedac.ciesin.columbia.edu/">Socioeconomic Data and Applications Center (SEDAC)</a></li>
+					<li><a href="https://www.unep.org/publications-data">UN Environment Programme Publications & Data</a></li>
+					<li><a href="https://zoatrack.org/">ZoaTrack</a></li>
+				</ul>
+			</div>
+			<div class="column-keys">
+				<h2 style="text-align: center;">Ecology keys</h2>
+				<p class="p-list">Categories</p>
+					<ol>
+						<li>Flora - Australia</li>
+						<li>Flora - New South Wales</li>
+						<li>Vertebrates - New South Wales</li>
+						<li>Invertebrates - Australia</li>
+						<li>Invertebrates - New South Wales</li>
+						<li>Other keys</li>
+					</ol>
+				<p class="p-list">Flora - Australia</p>
+				<ul>
+					<li><a href="https://apps.lucidcentral.org/wattle/text/intro/index.html">Acacias of Australia (Wattle)</a></li>
+					<li><a href="https://keybase.rbg.vic.gov.au/projects/show/25">Bryophytes of Australia</a></li>
+					<li><a href="https://keys.lucidcentral.org/search/anu-key-for-families-of-dicotyledons/">Dicotyledons of Australia (to family)</a></li>
+					<li><a href="http://keyserver.lucidcentral.org:8080/weeds/data/default.htm">Environmental Weeds of Australia</a></li>
+					<li><a href="https://apps.lucidcentral.org/euclid/text/intro/index.html">Eucalypts of Australia (EUCLID)</a></li>
+					<li><a href="https://keys.lucidcentral.org/keys/v3/FFPA/key/FFPA/Media/Html/index.htm">Flowering Plants of Australia (to family)</a></li>
+					<li><a href="https://keys.lucidcentral.org/keys/v3/AusGrass/key/AusGrass/Media/Html/Ausgrass%20welcome.htm">Grasses of Australia (AusGrass)</a></li>
+					<li><a href="https://keys.lucidcentral.org/keys/v3/cassinia/cassinia_group_lucid_key.html">Key to the Cassinia Group</a></li>
+					<li><a href="https://keys.lucidcentral.org/search/the-pea-key/">Peas of Australia</a></li>
+					<li><a href="https://keys.lucidcentral.org/search/all-australian-rubus/"><i>Rubus</i> Species of Australia</a>
+						<ul>
+							<li><a href="https://keys.lucidcentral.org/search/weedy-blackberry-species/">Invasive <i>Rubus</i> Species</a></li>
+						</ul>
+					<li><a href="https://apps.lucidcentral.org/ferns/text/intro/index.html">Tropical Ferns and Lycophytes of Australia</a></li>
+					<li><a href="https://www.anbg.gov.au/cpbr/cd-keys/RFKOrchids/key/rfkorchids/Media/Html/index.htm">Tropical Rainforest Orchids of Australia</a></li>
+					<li><a href="https://apps.lucidcentral.org/rainforest/text/intro/index.html">Tropical Rainforest Plants of Australia</a></li>
+					<li><a href="https://keybase.rbg.vic.gov.au/projects/show/1">Vascular Plants of Australia</a></li>
+				</ul>
+				<p class="p-list">Flora - New South Wales</p>
+				<ul>
+					<li><a href="https://keybase.rbg.vic.gov.au/projects/show/21">Flora of New South Wales</a></li>
+					<li><a href="https://plantnet.rbgsyd.nsw.gov.au/trad_keys.htm">Flora of New South Wales (PlantNET)</a></li>
+					<li><a href="https://keys.lucidcentral.org/keys/v3/scotia/key/Plants%20and%20Fungi%20of%20south%20western%20NSW/Media/Html/home.html">Plants and Fungi of South Western New South Wales</a></li>
+					<li><a href="https://apps.lucidcentral.org/plants_se_nsw/text/intro/index.html">Plants of South Eastern New South Wales</a></li>
+				</ul>
+				<p class="p-list">Vertebrates - New South Wales</p>
+				<ul>
+					<li><a href="https://keys.lucidcentral.org/search/frogs-of-new-south-wales/">Frogs of New South Wales</a></li>
+				</ul>
+				<p class="p-list">Invertebrates - Australia</p>
+				<ul>
+					<li><a href="https://keys.lucidcentral.org/search/key-to-orders-of-australian-aquatic-arthropoda/">Aquatic Arthropoda of Australia (to order)</a></li>
+					<li><a href="https://keys.lucidcentral.org/search/key-to-families-of-adult-australian-aquatic-coleoptera-beetles/">Aquatic Beetles of Australia (to family)</a></li>
+					<li><a href="https://keys.lucidcentral.org/search/key-to-families-of-australian-aquatic-crustacea/">Aquatic Crustacea of Australia (to family)</a></li>
+					<li><a href="https://keys.lucidcentral.org/search/class-and-order-of-australian-aquatic-flatworms/">Aquatic Flatworms of Australia (to class and order)</a></li>
+					<li><a href="https://keys.lucidcentral.org/search/key-to-families-of-australian-aquatic-hemiptera-true-bugs/">Aquatic Hemiptera of Australia (to family)</a></li>
+					<li><a href="https://keys.lucidcentral.org/search/key-to-phylum-and-class-of-australian-aquatic-invertebrates/">Aquatic Invertebrates of Australia (to phylum and class)</a></li>
+					<li><a href="https://keys.lucidcentral.org/search/key-to-families-of-australian-aquatic-molluscs/">Aquatic Molluscs of Australia (to family)</a></li>
+					<li><a href="https://keys.lucidcentral.org/search/carrion-flies-of-australia/">Carrion Flies of Australia</a></li>
+					<li><a href="https://keys.lucidcentral.org/keys/v3/the-caterpillar-key/">Caterpillars of Australia (to family)</a></li>
+					<li><a href="https://keys.lucidcentral.org/search/freshwater-arachnids-spiders-mites/">Freshwater Arachnids of Australia</a></li>
+					<li><a href="https://keys.lucidcentral.org/keys/v3/NudiKey/">Heterobranch Sea Slugs of Australia (NudiKey)</a></li>
+					<li><a href="https://keys.lucidcentral.org/keys/v3/what_wasp_is_that/key/What%20wasp%20is%20that/Media/Html/Hymenoptera%20key/FrontPage.htm">Hymenoptera of Australia (Ants, Bees, Wasps, and Sawflies)</a></li>
+					<li><a href="https://anic.csiro.au/insectfamilies/">Insect Families of Australia</a></li>
+					<li><a href="https://apps.lucidcentral.org/salticidae/text/intro/index.html">Jumping Spiders of Australia</a></li>
+					<li><a href="https://keys.lucidcentral.org/search/lace-bugs-of-australia/">Lace Bugs of Australia</a></li>
+					<li><a href="https://keys.lucidcentral.org/search/key-to-the-genera-of-australian-ladybirds/">Ladybirds of Australia</a></li>
+					<li><a href="https://keys.lucidcentral.org/search/exotic-scarab-pests/">Scarab Pests of Australia</a></li>
+					<li><a href="https://keys.lucidcentral.org/search/australian-soft-scale-coccidae-genera/">Soft Scale of Australia</a></li>
+					<li><a href="https://keys.lucidcentral.org/keys/v3/spider_mites_australia/">Spider Mites of Australia</a></li>
+					<li><a href="https://apps.lucidcentral.org/spiders/">Spiders of Australia (to subfamily)</a></li>
+					<li><a href="https://keys.lucidcentral.org/search/stink-bugs-of-australia/">Stink Bugs of Australia</a></li>
+					<li><a href="https://keys.lucidcentral.org/search/thysanoptera-australiensis/">Thrips of Australia</a></li>
+				</ul>
+				<p class="p-list">Invertebrates - New South Wales</p>
+				<ul>
+					<li><a href="https://keys.lucidcentral.org/search/key-to-the-christmas-beetles-of-new-south-wales/">Christmas Beetles of New South Wales</a></li>
+					<li><a href="https://keys.lucidcentral.org/search/key-to-the-dung-beetles-of-eastern-new-south-wales/">Dung Beetles of Eastern New South Wales</a></li>
+					<ul>
+						<li><a href="https://keys.lucidcentral.org/search/dung-beetles-of-eastern-nsw-amphistomus-subkey/"><i>Amphistomus</i> subkey</a></li>
+            <li><a href="https://keys.lucidcentral.org/search/dung-beetles-of-eastern-nsw-aptenocanthon-subkey/"><i>Aptenocanthon</i> subkey</a></li>
+            <li><a href="https://keys.lucidcentral.org/search/dung-beetles-of-eastern-nsw-aulacopris-subkey/"><i>Aulacopris</i> subkey</a></li>
+            <li><a href="https://keys.lucidcentral.org/search/dung-beetles-of-eastern-nsw-cephalodesmius-subkey/"><i>Cephalodesmius</i> subkey</a></li>
+            <li><a href="https://keys.lucidcentral.org/search/dung-beetles-of-eastern-nsw-demarziella-subkey/"><i>Demarziella</i> subkey</a></li>
+            <li><a href="https://keys.lucidcentral.org/search/dung-beetles-of-eastern-nsw-diorygopyx-subkey/"><i>Diorygopyx</i> subkey</a></li>
+            <li><a href="https://keys.lucidcentral.org/search/dung-beetles-of-eastern-nsw-euonticellus-subkey/"><i>Euonticellus</i> subkey</a></li>
+            <li><a href="https://keys.lucidcentral.org/search/dung-beetles-of-eastern-nsw-lepanus-subkey/"><i>Lepanus</i> subkey</a></li>
+            <li><a href="https://keys.lucidcentral.org/search/dung-beetles-of-eastern-nsw-onitis-subkey/"><i>Onitis</i> subkey</a></li>
+            <li><a href="https://keys.lucidcentral.org/search/dung-beetles-of-eastern-nsw-onthophagus-subkey/"><i>Onthophagus</i> subkey</a></li>
+            <li><a href="https://keys.lucidcentral.org/search/dung-beetles-of-eastern-nsw-thyregis-subkey/"><i>Thyregis</i> subkey</a></li>
+					</ul>
+					<li><a href="https://keys.lucidcentral.org/search/flower-chafers-of-new-south-wales/">Flower Chafers of New South Wales</a></li>
+					<li>Leaf Beetles of New South Wales</li>
+					<ul>
+						<li><a href="https://keys.lucidcentral.org/search/key-to-the-chrysomelinae-of-new-south-wales/">Chrysomelinae of New South Wales</a></li>
+            <li><a href="https://keys.lucidcentral.org/search/key-to-the-sagrinae-of-new-south-wales/">Sagrinae of New South Wales</a></li>
+            <li><a href="https://keys.lucidcentral.org/search/key-to-the-spilopyrinae-of-new-south-wales/">Spilopyrinae of New South Wales</a></li>
+					</ul>
+				</ul>
+				<p class="p-list">Other keys</p>
+				<ul>
+					<li><a href="https://taxonomic.aad.gov.au/">Antarctic Marine Protist Keys</a></li>
+					<li><a href="https://keys.lucidcentral.org/keys/v3/scotia/key/Plants%20and%20Fungi%20of%20south%20western%20NSW/Media/Html/home.html">Plants and Fungi of South Western New South Wales</a></li>
+					<li><a href="https://collections.daff.qld.gov.au/web/key/rustfungi/Media/Html/about.html">Rust Fungi of Australia</a></li>
+				</ul>
+			</div>
+		</main>
+		</div>
+  </body>
+</html>
